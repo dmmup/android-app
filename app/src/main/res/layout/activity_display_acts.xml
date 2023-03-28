@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/back_icon"
+                    android:onClick="onSignOut"
+                    android:id="@+id/imgBack"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="185dp"
+                    android:id="@+id/lblProfil"
+                    android:text=""/>
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/prof_icon"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="LISTE DES ACTIVITES"
+                android:textSize="30dp"
+                android:layout_marginBottom="15dp" />
+
+            <ListView
+                android:id="@+id/lstAct"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:scrollbarSize="3dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:clickable="true"
+                android:scrollbars="vertical"
+                android:scrollingCache="true"
+                android:smoothScrollbar="true">
+
+            </ListView>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="Add Activity"
+                android:layout_marginTop="20dp"
+                android:onClick="onAddActivity"
+                android:id="@+id/btnAddActivity"
+                />
+        </LinearLayout>
+
+</LinearLayout>
